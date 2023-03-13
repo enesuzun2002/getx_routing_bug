@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
     return GetBuilder(
       init: HomeController(title: title),
       builder: (HomeController controller) => Body(controller: controller),
+      tag: title,
     );
   }
 }

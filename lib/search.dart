@@ -14,9 +14,11 @@ class SearchScreen extends StatelessWidget {
       body: Center(
           child: ElevatedButton(
         child: const Text("Go Home"),
-        onPressed: () => Get.to(() => const HomeScreen(
-              title: "Test-2",
-            )),
+        onPressed: () => Get.to(
+            () => const HomeScreen(
+                  title: "Test-2",
+                ),
+            preventDuplicates: false),
       )),
     );
   }
